@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		02A8A58C1F5FB0DB00A02A51 /* ESDotsLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 02A8A58A1F5FB0DB00A02A51 /* ESDotsLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02A8A5931F5FB0ED00A02A51 /* DotsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A8A5921F5FB0ED00A02A51 /* DotsLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02A8A5871F5FB0DB00A02A51 /* ESDotsLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESDotsLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A8A58A1F5FB0DB00A02A51 /* ESDotsLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESDotsLoader.h; sourceTree = "<group>"; };
 		02A8A58B1F5FB0DB00A02A51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02A8A5921F5FB0ED00A02A51 /* DotsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotsLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		02A8A5891F5FB0DB00A02A51 /* ESDotsLoader */ = {
 			isa = PBXGroup;
 			children = (
+				02A8A5921F5FB0ED00A02A51 /* DotsLoader.swift */,
 				02A8A58A1F5FB0DB00A02A51 /* ESDotsLoader.h */,
 				02A8A58B1F5FB0DB00A02A51 /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					02A8A5861F5FB0DB00A02A51 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02A8A5931F5FB0ED00A02A51 /* DotsLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +246,7 @@
 		02A8A5901F5FB0DB00A02A51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -252,6 +258,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.emaartechnologies.ESDotsLoader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +266,7 @@
 		02A8A5911F5FB0DB00A02A51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
